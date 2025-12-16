@@ -72,58 +72,62 @@ def generate_plot(gainers, losers):
     plt.savefig('crypto_movers_plot.png')
 
 def update_readme(tables, plot_path='crypto_movers_plot.png'):
-    """Updates the README.md file with new data and plot reference."""
-    readme_path = 'README.md'
+    """Updates the README.md file with new data, preserving content before and after markers."""
+    readme_path = 'README.md'   
+    # Define the markers
+    start_marker = "<!-- START_DYNAMIC_CONTENT -->"
+    end_marker = "<!-- END_DYNAMIC_CONTENT -->"
     
-    # Read existing content if it exists to preserve top section
-    if os.path.exists(readme_path):
-        with open(readme_path, 'r') as f:
-            content = f.read()
-            start_marker = "<!-- START_DYNAMIC_CONTENT -->"
-            end_marker = "<!-- END_DYNAMIC_CONTENT -->"
-            if start_marker in content and end_marker in content:
-                # Keep content before start marker
-                pre_content = content.split(start_marker)[0]
-            else:
-                pre_content = "# Crypto Market Movers (24h)\n\n"
-    else:
-        pre_content = "# Crypto Market Movers (24h)\n\n"
+    # Initialize variables for content parts
+    pre_content = ""
+    post_content = ""
 
-    new_content = pre_content.strip() + "\n\n"
-    new_content += "<!-- START_DYNAMIC_CONTENT -->\n"
-    new_content += f"Last updated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M UTC')}\n\n"
+    if os.path.exists(readme_path):
+        with open(readme_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+            
+            # Extract content before the start marker
+            if start_marker in content:
+                pre_content = content.split(start_marker)[0].strip()
+            
+            # Extract content after the end marker
+            if end_marker in content:
+                # Find the position of the end marker and slice everything after it
+                end_pos = content.find(end_marker) + len(end_marker)
+                post_content = content[end_pos:].strip()
+
+    # Build the new content block
+    new_dynamic_content = f"\nLast updated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M UTC')}\n\n"
     
-    # Add plot
+    # Add plot reference
     if os.path.exists(plot_path):
-        new_content += f"![Crypto Movers Plot]({plot_path})\n\n"
+        new_dynamic_content += f"![Crypto Movers Plot]({plot_path})\n\n"
 
     # Add tables
     for table in tables:
-        new_content += table
-        new_content += "\n"
-        
-    new_content += "<!-- END_DYNAMIC_CONTENT -->"
+        new_dynamic_content += table
+        new_dynamic_content += "\n"
 
-    with open(readme_path, 'w') as f:
-        f.write(new_content)
+    # Assemble the final README content
+    final_readme_content = f"{pre_content}\n\n{start_marker}{new_dynamic_content}{end_marker}\n\n{post_content}"
+
+    with open(readme_path, 'w', encoding='utf-8') as f:
+        f.write(final_readme_content.strip() + "\n")
+
 
 if __name__ == "__main__":
     try:
         data = fetch_crypto_data()
         gainers, losers, volume = process_data(data)
-
         # Generate tables
         gainers_table = generate_markdown_table(gainers, "🚀 Top 5 Gainers (24h)")
         losers_table = generate_markdown_table(losers, "👇 Top 5 Losers (24h)")
-        volume_table = generate_markdown_table(volume, "💎 Top 5 by Trade Volume (24h)")
-        
+        volume_table = generate_markdown_table(volume, "💎 Top 5 by Trade Volume (24h)")       
         # Generate plot
         generate_plot(gainers, losers)
-
         # Update README
         update_readme([gainers_table, losers_table, volume_table])
         print("README.md updated successfully.")
 
     except Exception as e:
         print(f"An error occurred: {e}")
-
