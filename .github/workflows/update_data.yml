@@ -1,0 +1,35 @@
+name: Update Crypto Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at 00:00 midnight UTC
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run data updater script
+        # The secret is automatically passed as an environment variable to the script
+        run: python main.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update crypto data and plot"
+          files: |
+            README.md
+            crypto_movers_plot.png
+          branch: main
