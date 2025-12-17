@@ -33,7 +33,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-update crypto data and plot"
-          file_pattern: |
-            README.md
-            crypto_movers_plot.png
+          file_pattern: 'README.md crypto_movers_plot.png'
           branch: main
