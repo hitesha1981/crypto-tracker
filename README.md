@@ -44,7 +44,8 @@ Last updated: 2025-12-17 06:04 UTC
 <!-- END_DYNAMIC_CONTENT -->
 
 ## How to generate the coingecko demo public api key
-[coingecko-api-key-docs]: https://support.coingecko.com/hc/en-us/articles/21880397454233-User-Guide-How-to-sign-up-for-CoinGecko-Demo-API-and-generate-an-API-key
+
+[coingecko-api-key-docs](https://support.coingecko.com/hc/en-us/articles/21880397454233-User-Guide-How-to-sign-up-for-CoinGecko-Demo-API-and-generate-an-API-key)
 
 ## Requirements to setup
 ## 1. Install uv
