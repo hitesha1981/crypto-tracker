@@ -4,7 +4,7 @@ Author: Hitesh Agrawal
 This repository automatically tracks the top 5 gaining, top 5 losing, and top 5 highest volume cryptocurrencies in the last 24 hours using the CoinGecko API, Python, Matplotlib, and GitHub Actions updates the below content everyday at midnight.
 
 <!-- START_DYNAMIC_CONTENT -->
-Last updated: 2026-05-16 02:13 UTC
+Last updated: 2026-05-17 02:28 UTC
 
 ![Crypto Movers Plot](crypto_movers_plot.png)
 
@@ -12,33 +12,33 @@ Last updated: 2026-05-16 02:13 UTC
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | asteroid | 11.73% | $19,191,983 | $0.0003 |
-| 2 | ff | 10.73% | $85,456,056 | $0.0890 |
-| 3 | hash | 7.17% | $10,965 | $0.0113 |
-| 4 | beat | 5.85% | $8,600,047 | $0.6162 |
-| 5 | chz | 4.25% | $133,000,842 | $0.0462 |
+| 1 | xp | 79.02% | $3,072,680 | $0.0651 |
+| 2 | h | 10.09% | $30,254,214 | $0.2387 |
+| 3 | stable | 8.81% | $30,813,110 | $0.0356 |
+| 4 | asteroid | 7.93% | $15,956,432 | $0.0004 |
+| 5 | kaia | 4.98% | $11,170,535 | $0.0483 |
 
 
 **👇 Top 5 Losers (24h)**
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | rune | -17.92% | $41,878,136 | $0.4831 |
-| 2 | lab | -17.26% | $137,685,869 | $4.8800 |
-| 3 | bill | -15.21% | $482,129,953 | $0.1807 |
-| 4 | skyai | -14.91% | $35,897,275 | $0.3300 |
-| 5 | stable | -14.86% | $19,207,073 | $0.0333 |
+| 1 | ub | -32.57% | $49,860,014 | $0.1563 |
+| 2 | bill | -22.99% | $780,911,608 | $0.1381 |
+| 3 | b | -9.69% | $37,740,166 | $0.3905 |
+| 4 | pendle | -9.54% | $36,561,027 | $1.8100 |
+| 5 | glm | -9.12% | $23,947,624 | $0.1349 |
 
 
 **💎 Top 5 by Trade Volume (24h)**
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | usdt | -0.03% | $62,227,818,575 | $0.9994 |
-| 2 | btc | -2.18% | $36,818,978,163 | $79,132.0000 |
-| 3 | eth | -1.74% | $15,818,173,695 | $2,229.0800 |
-| 4 | usdc | 0.01% | $13,994,584,857 | $0.9998 |
-| 5 | sol | -2.90% | $3,004,232,626 | $89.2400 |
+| 1 | usdt | 0.01% | $43,311,747,197 | $0.9995 |
+| 2 | btc | -1.66% | $26,123,221,636 | $77,823.0000 |
+| 3 | eth | -2.47% | $10,669,565,000 | $2,172.7900 |
+| 4 | usdc | -0.00% | $6,622,650,359 | $0.9998 |
+| 5 | sol | -3.55% | $2,361,655,867 | $85.9700 |
 
 
 <!-- END_DYNAMIC_CONTENT -->
