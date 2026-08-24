@@ -4,7 +4,7 @@ Author: Hitesh Agrawal
 This repository automatically tracks the top 5 gaining, top 5 losing, and top 5 highest volume cryptocurrencies in the last 24 hours using the CoinGecko API, Python, Matplotlib, and GitHub Actions updates the below content everyday at midnight.
 
 <!-- START_DYNAMIC_CONTENT -->
-Last updated: 2026-08-23 00:52 UTC
+Last updated: 2026-08-24 00:50 UTC
 
 ![Crypto Movers Plot](crypto_movers_plot.png)
 
@@ -12,33 +12,33 @@ Last updated: 2026-08-23 00:52 UTC
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | trump | 26.80% | $2,315,526,011 | $2.3700 |
-| 2 | pump | 24.50% | $751,269,502 | $0.0049 |
-| 3 | melania | 18.60% | $39,731,622 | $0.1084 |
-| 4 | stx | 17.70% | $85,861,148 | $0.2211 |
-| 5 | zro | 16.00% | $111,348,945 | $1.1700 |
+| 1 | morpho | 27.90% | $72,549,781 | $2.7900 |
+| 2 | cashcat | 26.50% | $32,444,316 | $0.1496 |
+| 3 | trac | 23.60% | $47,185,894 | $0.3970 |
+| 4 | grass | 23.50% | $25,987,047 | $0.3652 |
+| 5 | pengu | 18.30% | $372,404,061 | $0.0097 |
 
 
 **👇 Top 5 Losers (24h)**
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | kag | -15.80% | $2,115 | $52.7100 |
-| 2 | pieverse | -14.70% | $11,637,033 | $0.9645 |
-| 3 | shib | -11.80% | $235,682,418 | $0.0000 |
-| 4 | zbcn | -11.30% | $9,621,917 | $0.0019 |
-| 5 | grass | -10.20% | $27,140,277 | $0.3037 |
+| 1 | b | -7.30% | $3,881,207 | $0.1341 |
+| 2 | h | -4.30% | $4,952,675 | $0.0690 |
+| 3 | genius | -3.70% | $8,781,300 | $0.3212 |
+| 4 | ake | -3.70% | $2,478,594 | $0.0086 |
+| 5 | btw | -3.40% | $14,293,097 | $0.4320 |
 
 
 **💎 Top 5 by Trade Volume (24h)**
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | sand | -7.70% | $18,585,982,494,929 | $0.0457 |
-| 2 | usdt | 0.00% | $81,861,038,991 | $0.9998 |
-| 3 | btc | -1.70% | $36,107,576,212 | $77,283.0000 |
-| 4 | eth | -3.90% | $20,135,738,842 | $2,429.2300 |
-| 5 | usdc | 0.00% | $19,404,234,957 | $0.9999 |
+| 1 | sand | 1.40% | $2,711,409,611,214 | $0.0454 |
+| 2 | usdt | 0.00% | $57,357,069,954 | $0.9999 |
+| 3 | btc | 0.90% | $29,914,471,825 | $77,290.0000 |
+| 4 | eth | 2.10% | $16,668,026,642 | $2,447.7400 |
+| 5 | usdc | 0.00% | $13,859,981,611 | $0.9999 |
 
 
 <!-- END_DYNAMIC_CONTENT -->
