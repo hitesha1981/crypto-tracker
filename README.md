@@ -4,7 +4,7 @@ Author: Hitesh Agrawal
 This repository automatically tracks the top 5 gaining, top 5 losing, and top 5 highest volume cryptocurrencies in the last 24 hours using the CoinGecko API, Python, Matplotlib, and GitHub Actions updates the below content everyday at midnight.
 
 <!-- START_DYNAMIC_CONTENT -->
-Last updated: 2026-09-08 02:24 UTC
+Last updated: 2026-09-09 02:26 UTC
 
 ![Crypto Movers Plot](crypto_movers_plot.png)
 
@@ -12,33 +12,33 @@ Last updated: 2026-09-08 02:24 UTC
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | inj | 20.81% | $233,655,584 | $6.6100 |
-| 2 | ai | 18.42% | $44,182,033 | $0.2658 |
-| 3 | wld | 18.24% | $499,266,426 | $0.4857 |
-| 4 | aero | 17.95% | $135,548,511 | $0.6488 |
-| 5 | uai | 16.11% | $25,262,546 | $0.7158 |
+| 1 | useless | 31.42% | $191,375,450 | $0.2939 |
+| 2 | vvv | 30.93% | $219,795,207 | $24.8900 |
+| 3 | ff | 23.26% | $65,035,583 | $0.1474 |
+| 4 | form | 23.11% | $100,040,617 | $0.3102 |
+| 5 | dot | 12.75% | $434,890,281 | $1.2000 |
 
 
 **👇 Top 5 Losers (24h)**
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | cashcat | -12.31% | $28,112,964 | $0.1983 |
-| 2 | zcat | -11.94% | $24,474,524 | $0.1319 |
-| 3 | arb | -8.86% | $454,830,199 | $0.1701 |
-| 4 | npc | -8.47% | $4,818,377 | $0.0186 |
-| 5 | dash | -7.97% | $204,724,351 | $64.2800 |
+| 1 | marscoin | -24.04% | $94,914,406 | $0.1182 |
+| 2 | tibbir | -9.67% | $4,952,264 | $0.2077 |
+| 3 | stonk | -9.39% | $68,269,194 | $0.1503 |
+| 4 | virtual | -7.23% | $67,339,960 | $0.7035 |
+| 5 | op | -7.15% | $67,745,230 | $0.1044 |
 
 
 **💎 Top 5 by Trade Volume (24h)**
 
 | Rank | Coin | Price Change (24h %) | Volume (USD) | Current Price (USD) |
 | :--: | :--: | :------------------: | :----------: | :-----------------: |
-| 1 | usdt | -0.00% | $46,914,805,619 | $0.9999 |
-| 2 | btc | -0.75% | $22,883,518,133 | $79,329.0000 |
-| 3 | usdc | 0.01% | $11,554,391,443 | $0.9999 |
-| 4 | eth | -0.19% | $11,156,447,905 | $2,499.3300 |
-| 5 | sol | -1.21% | $3,059,646,969 | $104.2400 |
+| 1 | usdt | -0.01% | $58,389,963,995 | $0.9998 |
+| 2 | btc | -0.78% | $37,617,333,064 | $78,787.0000 |
+| 3 | usdc | 0.01% | $15,335,859,281 | $1.0000 |
+| 4 | eth | -0.31% | $11,928,742,067 | $2,495.7200 |
+| 5 | link | -2.47% | $4,534,146,784 | $12.4700 |
 
 
 <!-- END_DYNAMIC_CONTENT -->
